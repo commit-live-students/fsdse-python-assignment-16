@@ -1,1 +1,15 @@
-# fsdse-python-assignment-16
+# Given this nest dictionary grab the word "hello".
+
+**Notes:**
+* We have provided a dic object.
+* Iterate over it and return last index word for target which is hello.
+
+
+**Instructions:**
+* We have created a file for you named build.py.
+* Inside this file we have created a function for you named solution.
+* You have to code inside this function only.
+* In advance python we will cover you how to create functions and classes.
+* Function always should return something. In our case it should return expected output from program.
+* If you do not follow these steps test cases will not execute and you can not submit the code.
+* Please contact tech@greyatom.com for more information.
