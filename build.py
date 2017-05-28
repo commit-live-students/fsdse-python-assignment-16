@@ -10,21 +10,20 @@ def solution(dic):
         #print dic[key]
         if type(dic[key]) == list:
             dicValue = dic[key]
-            for listValue in dicValue:
-                if type(listValue) == dict:
-                    for secondKey in listValue:
-                        if type(listValue[secondKey]) == list:
-                            for secondList in listValue[secondKey]:
-                                if type(secondList) == dict:
-                                    for thirdKey in secondList:
-                                        if type(secondList[thirdKey]) == list:
-                                            thirdList = secondList[thirdKey]
-                                            last_index_of_target = thirdList[-1]
-                                            break
-                                    break
-                            break
+            if type(dicValue[-1]) == dict:
+                for secondKey in dicValue[-1]:
+                    secondDicValue = dicValue[-1]
+                    if type(secondDicValue[secondKey]) == list:
+                        secondList = secondDicValue[secondKey]
+                        if type(secondList[-1]) == dict:
+                            for thirdKey in secondList[-1]:
+                                thirdDicValue = secondList[-1]
+                                thirdList = thirdDicValue[thirdKey]
+                                last_index_of_target = thirdList[-1]
+                                break
                     break
             break
+
         else:
             print type(dic[key])
     return last_index_of_target
