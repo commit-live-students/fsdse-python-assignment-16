@@ -1,5 +1,4 @@
 def solution(dic):
-    last_index_of_target = None
     '''
     Enter your code here
     '''
