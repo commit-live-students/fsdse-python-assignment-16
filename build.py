@@ -1,5 +1,5 @@
 def solution(dic):
-    last_index_of_target = None
+    last_index_of_target = dic['k1'][3]['tricky'][3]['target'][3]
     '''
     Enter your code here
     '''
